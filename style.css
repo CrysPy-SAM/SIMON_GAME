@@ -1,0 +1,81 @@
+/* Body styling to center everything */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack heading and buttons vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center; /* Align text */
+    background-color: #f0f0f0; /* Light background for better visibility */
+    font-family: Arial, sans-serif;
+}
+
+/* Buttons styling */
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Button container styling */
+.btn-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 1.5rem; /* Space between buttons */
+}
+
+/* Button colors */
+.yellow {
+    background-color: #f99b45;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+/* Flash animations */
+.flash {
+    background-color: white;
+    animation: flash 0.25s ease;
+}
+
+.userflash {
+    background-color: green;
+    animation: userflash 0.25s ease;
+}
+
+/* Flash animation keyframes */
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes userflash {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 2rem; /* Space below heading */
+    font-size: 2rem;
+    color: #333;
+}
